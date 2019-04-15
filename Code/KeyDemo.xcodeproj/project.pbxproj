@@ -8,13 +8,40 @@
 
 /* Begin PBXBuildFile section */
 		1F35C1AD2264590C001F4E58 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F35C1AC2264590C001F4E58 /* AppDelegate.swift */; };
-		1F35C1AF2264590C001F4E58 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F35C1AE2264590C001F4E58 /* ViewController.swift */; };
 		1F35C1B12264590E001F4E58 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1F35C1B02264590E001F4E58 /* Assets.xcassets */; };
 		1F35C1B42264590E001F4E58 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1F35C1B22264590E001F4E58 /* Main.storyboard */; };
 		1F35C1BD2264595C001F4E58 /* WindowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F35C1BC2264595C001F4E58 /* WindowController.swift */; };
-		1F35C1BF22645B9C001F4E58 /* View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F35C1BE22645B9C001F4E58 /* View.swift */; };
-		1F35C1C222647477001F4E58 /* Content.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1F35C1C022647477001F4E58 /* Content.storyboard */; };
+		1F35C1CC226474FE001F4E58 /* CustomViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 1F35C1CA226474FE001F4E58 /* CustomViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1F35C1CF226474FE001F4E58 /* CustomViewController.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F35C1C8226474FE001F4E58 /* CustomViewController.framework */; };
+		1F35C1D0226474FE001F4E58 /* CustomViewController.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 1F35C1C8226474FE001F4E58 /* CustomViewController.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		1F35C1D522647514001F4E58 /* View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F35C1BE22645B9C001F4E58 /* View.swift */; };
+		1F35C1D622647514001F4E58 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F35C1AE2264590C001F4E58 /* ViewController.swift */; };
+		1F35C1D72264751A001F4E58 /* Content.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1F35C1C022647477001F4E58 /* Content.storyboard */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		1F35C1CD226474FE001F4E58 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1F35C1A12264590C001F4E58 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1F35C1C7226474FE001F4E58;
+			remoteInfo = CustomViewController;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		1F35C1D4226474FE001F4E58 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				1F35C1D0226474FE001F4E58 /* CustomViewController.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		1F35C1A92264590C001F4E58 /* KeyDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KeyDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -27,10 +54,21 @@
 		1F35C1BC2264595C001F4E58 /* WindowController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WindowController.swift; sourceTree = "<group>"; };
 		1F35C1BE22645B9C001F4E58 /* View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = View.swift; sourceTree = "<group>"; };
 		1F35C1C122647477001F4E58 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = KeyDemo/Base.lproj/Content.storyboard; sourceTree = "<group>"; };
+		1F35C1C8226474FE001F4E58 /* CustomViewController.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CustomViewController.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1F35C1CA226474FE001F4E58 /* CustomViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CustomViewController.h; sourceTree = "<group>"; };
+		1F35C1CB226474FE001F4E58 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		1F35C1A62264590C001F4E58 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1F35C1CF226474FE001F4E58 /* CustomViewController.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1F35C1C5226474FE001F4E58 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -43,8 +81,8 @@
 		1F35C1A02264590C001F4E58 = {
 			isa = PBXGroup;
 			children = (
-				1F35C1C022647477001F4E58 /* Content.storyboard */,
 				1F35C1AB2264590C001F4E58 /* KeyDemo */,
+				1F35C1C9226474FE001F4E58 /* CustomViewController */,
 				1F35C1AA2264590C001F4E58 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -53,6 +91,7 @@
 			isa = PBXGroup;
 			children = (
 				1F35C1A92264590C001F4E58 /* KeyDemo.app */,
+				1F35C1C8226474FE001F4E58 /* CustomViewController.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -61,8 +100,6 @@
 			isa = PBXGroup;
 			children = (
 				1F35C1AC2264590C001F4E58 /* AppDelegate.swift */,
-				1F35C1AE2264590C001F4E58 /* ViewController.swift */,
-				1F35C1BE22645B9C001F4E58 /* View.swift */,
 				1F35C1BC2264595C001F4E58 /* WindowController.swift */,
 				1F35C1B02264590E001F4E58 /* Assets.xcassets */,
 				1F35C1B22264590E001F4E58 /* Main.storyboard */,
@@ -72,7 +109,30 @@
 			path = KeyDemo;
 			sourceTree = "<group>";
 		};
+		1F35C1C9226474FE001F4E58 /* CustomViewController */ = {
+			isa = PBXGroup;
+			children = (
+				1F35C1CA226474FE001F4E58 /* CustomViewController.h */,
+				1F35C1C022647477001F4E58 /* Content.storyboard */,
+				1F35C1AE2264590C001F4E58 /* ViewController.swift */,
+				1F35C1BE22645B9C001F4E58 /* View.swift */,
+				1F35C1CB226474FE001F4E58 /* Info.plist */,
+			);
+			path = CustomViewController;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		1F35C1C3226474FE001F4E58 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1F35C1CC226474FE001F4E58 /* CustomViewController.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
 		1F35C1A82264590C001F4E58 /* KeyDemo */ = {
@@ -82,15 +142,35 @@
 				1F35C1A52264590C001F4E58 /* Sources */,
 				1F35C1A62264590C001F4E58 /* Frameworks */,
 				1F35C1A72264590C001F4E58 /* Resources */,
+				1F35C1D4226474FE001F4E58 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				1F35C1CE226474FE001F4E58 /* PBXTargetDependency */,
 			);
 			name = KeyDemo;
 			productName = KeyDemo;
 			productReference = 1F35C1A92264590C001F4E58 /* KeyDemo.app */;
 			productType = "com.apple.product-type.application";
+		};
+		1F35C1C7226474FE001F4E58 /* CustomViewController */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1F35C1D1226474FE001F4E58 /* Build configuration list for PBXNativeTarget "CustomViewController" */;
+			buildPhases = (
+				1F35C1C3226474FE001F4E58 /* Headers */,
+				1F35C1C4226474FE001F4E58 /* Sources */,
+				1F35C1C5226474FE001F4E58 /* Frameworks */,
+				1F35C1C6226474FE001F4E58 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CustomViewController;
+			productName = CustomViewController;
+			productReference = 1F35C1C8226474FE001F4E58 /* CustomViewController.framework */;
+			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
 
@@ -103,6 +183,9 @@
 				ORGANIZATIONNAME = "Nicolás Miari";
 				TargetAttributes = {
 					1F35C1A82264590C001F4E58 = {
+						CreatedOnToolsVersion = 10.2;
+					};
+					1F35C1C7226474FE001F4E58 = {
 						CreatedOnToolsVersion = 10.2;
 					};
 				};
@@ -121,6 +204,7 @@
 			projectRoot = "";
 			targets = (
 				1F35C1A82264590C001F4E58 /* KeyDemo */,
+				1F35C1C7226474FE001F4E58 /* CustomViewController */,
 			);
 		};
 /* End PBXProject section */
@@ -132,7 +216,14 @@
 			files = (
 				1F35C1B12264590E001F4E58 /* Assets.xcassets in Resources */,
 				1F35C1B42264590E001F4E58 /* Main.storyboard in Resources */,
-				1F35C1C222647477001F4E58 /* Content.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1F35C1C6226474FE001F4E58 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1F35C1D72264751A001F4E58 /* Content.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -143,14 +234,29 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1F35C1BF22645B9C001F4E58 /* View.swift in Sources */,
-				1F35C1AF2264590C001F4E58 /* ViewController.swift in Sources */,
 				1F35C1BD2264595C001F4E58 /* WindowController.swift in Sources */,
 				1F35C1AD2264590C001F4E58 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		1F35C1C4226474FE001F4E58 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1F35C1D622647514001F4E58 /* ViewController.swift in Sources */,
+				1F35C1D522647514001F4E58 /* View.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		1F35C1CE226474FE001F4E58 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1F35C1C7226474FE001F4E58 /* CustomViewController */;
+			targetProxy = 1F35C1CD226474FE001F4E58 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		1F35C1B22264590E001F4E58 /* Main.storyboard */ = {
@@ -290,6 +396,7 @@
 		1F35C1BA2264590E001F4E58 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = KeyDemo/KeyDemo.entitlements;
 				CODE_SIGN_STYLE = Automatic;
@@ -309,6 +416,7 @@
 		1F35C1BB2264590E001F4E58 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = KeyDemo/KeyDemo.entitlements;
 				CODE_SIGN_STYLE = Automatic;
@@ -322,6 +430,64 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.nicolasmiari.KeyDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		1F35C1D2226474FE001F4E58 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = D2D4S4F85R;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_VERSION = A;
+				INFOPLIST_FILE = CustomViewController/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.nicolasmiari.CustomViewController;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		1F35C1D3226474FE001F4E58 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = D2D4S4F85R;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_VERSION = A;
+				INFOPLIST_FILE = CustomViewController/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.nicolasmiari.CustomViewController;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
 			};
 			name = Release;
 		};
@@ -342,6 +508,15 @@
 			buildConfigurations = (
 				1F35C1BA2264590E001F4E58 /* Debug */,
 				1F35C1BB2264590E001F4E58 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1F35C1D1226474FE001F4E58 /* Build configuration list for PBXNativeTarget "CustomViewController" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1F35C1D2226474FE001F4E58 /* Debug */,
+				1F35C1D3226474FE001F4E58 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
