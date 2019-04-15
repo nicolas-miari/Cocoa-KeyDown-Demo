@@ -13,4 +13,8 @@ class View: NSView {
     override func keyDown(with event: NSEvent) {
         print("Never Gets Called")
     }
+
+    override var acceptsFirstResponder: Bool {
+        return true
+    }
 }

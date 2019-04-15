@@ -13,6 +13,7 @@
 		1F35C1B42264590E001F4E58 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1F35C1B22264590E001F4E58 /* Main.storyboard */; };
 		1F35C1BD2264595C001F4E58 /* WindowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F35C1BC2264595C001F4E58 /* WindowController.swift */; };
 		1F35C1BF22645B9C001F4E58 /* View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F35C1BE22645B9C001F4E58 /* View.swift */; };
+		1F35C1C222647477001F4E58 /* Content.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1F35C1C022647477001F4E58 /* Content.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,6 +26,7 @@
 		1F35C1B62264590E001F4E58 /* KeyDemo.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = KeyDemo.entitlements; sourceTree = "<group>"; };
 		1F35C1BC2264595C001F4E58 /* WindowController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WindowController.swift; sourceTree = "<group>"; };
 		1F35C1BE22645B9C001F4E58 /* View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = View.swift; sourceTree = "<group>"; };
+		1F35C1C122647477001F4E58 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = KeyDemo/Base.lproj/Content.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -41,6 +43,7 @@
 		1F35C1A02264590C001F4E58 = {
 			isa = PBXGroup;
 			children = (
+				1F35C1C022647477001F4E58 /* Content.storyboard */,
 				1F35C1AB2264590C001F4E58 /* KeyDemo */,
 				1F35C1AA2264590C001F4E58 /* Products */,
 			);
@@ -129,6 +132,7 @@
 			files = (
 				1F35C1B12264590E001F4E58 /* Assets.xcassets in Resources */,
 				1F35C1B42264590E001F4E58 /* Main.storyboard in Resources */,
+				1F35C1C222647477001F4E58 /* Content.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -155,6 +159,14 @@
 				1F35C1B32264590E001F4E58 /* Base */,
 			);
 			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		1F35C1C022647477001F4E58 /* Content.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1F35C1C122647477001F4E58 /* Base */,
+			);
+			name = Content.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
